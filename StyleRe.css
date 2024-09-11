@@ -1,0 +1,90 @@
+body {
+    background-color: #28255f;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header-title {
+    background-color: #a10726;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+.header-title span {
+    color: white;
+}
+.header-title .letter {
+    color: red;
+}
+
+.form-container {
+    background-color: #1f1c3d;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-input {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.text-white {
+    color: white;
+}
+
+.input {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid white;
+    background-color: #3a3768;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: red;
+}
+
+.error-icon {
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+.submit-button, .back-button {
+    background-color: #a10726;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.submit-button:hover, .back-button:hover {
+    background-color: #7b051d;
+}

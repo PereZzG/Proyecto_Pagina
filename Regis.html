@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades El Parcero - Registro</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="StyleRe.css">
+</head>
+<body>
+    <div class="header-title">
+        <span>VARIE</span><span class="letter"><b>D</b></span><span>ADES EL PARCE</span><span class="letter">R</span><span>O</span>
+    </div>
+    <div class="form-container">
+        <div class="form-title"><b>Registrate!</b></div>
+        <div class="form-input">
+            <label for="email" class="text-white"><b>Correo Electronico</b></label>
+            <div class="relative">
+                <input type="text" id="email" placeholder="Email" class="input">
+                <i class="fas fa-check-circle error-icon"></i>
+            </div>
+        </div>
+        <div class="form-input">
+            <label for="name" class="text-white"><b>Nombre y Apellido</b></label>
+            <div class="relative">
+                <input type="text" id="name" placeholder="Alejandro Parra" class="input">
+                <i class="fas fa-check-circle error-icon"></i>
+            </div>
+        </div>
+        <div class="form-input">
+            <label for="password" class="text-white"><b>Contraseña</b></label>
+            <input type="password" id="password" placeholder="Contraseña" class="input">
+        </div>
+        <button class="submit-button" onclick="registerUser()">Registrar</button>
+        <button class="back-button" onclick="location.href='Index.html'">Volver</button>
+    </div>
+    <script src="Registro.js"></script>
+</body>
+</html>

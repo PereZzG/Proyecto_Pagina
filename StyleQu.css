@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #28255f;
+    font-family: Arial, sans-serif;
+}
+.header-title {
+    background-color: #a10726;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.header-title span {
+    color: white;
+}
+.header-title .letter {
+    color: red;
+}
+.gradient-text {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h2 {
+    background: #d32f2f;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

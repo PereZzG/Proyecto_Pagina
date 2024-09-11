@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades El Parcero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="StyleVe.css">
+</head>
+<body class="bg-gradient-to-r from-purple-800 to-blue-900 p-5">
+
+    <div class="header-title">
+        <span>VARIE</span><span class="letter">D</span><span>ADES EL PARCE</span><span class="letter">R</span><span>O</span>
+    </div>
+
+    <div class="nav-container">
+        <button class="nav-button" onclick="location.href='Produ.html'">Productos</button>
+        <button class="nav-button" onclick="location.href='Gesti.html'">Gestion</button>
+        <button class="nav-button" onclick="location.href='Vende.html'">Vender</button>
+        <button class="nav-button" onclick="location.href='Venta.html'">Ventas</button>
+        <button class="nav-button" onclick="location.href='Info.html'">Info</button>
+    </div>
+
+    <section class="text-center mb-8">
+        <h2 class="text-2xl text-white bg-red-600 inline-block py-2 px-6 rounded-full">¡Nueva compra!</h2>
+    </section>
+
+    <div class="product-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    <footer class="flex justify-center mt-8">
+        <button class="bg-red-600 text-white py-2 px-6 rounded-full" onclick="mostrarConfirmacion()">Comprar</button>
+    </footer>
+
+    <!-- Modal de confirmación -->
+    <div id="modalConfirmacion" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-5 rounded-lg">
+            <h3 class="text-xl font-bold mb-4">Confirmar Compra</h3>
+            <div id="resumenCompra"></div>
+            <p id="totalCompra" class="text-lg font-bold mt-4"></p>
+            <div class="mt-4 flex justify-between">
+                <button class="bg-green-600 text-white py-2 px-4 rounded" onclick="confirmarVenta()">Confirmar</button>
+                <button class="bg-gray-600 text-white py-2 px-4 rounded" onclick="cerrarModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="AlerVe.js"></script>
+</body>
+</html>

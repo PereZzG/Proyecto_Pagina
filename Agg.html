@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades El Parcero - Agregar Producto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="StyleAg.css">
+</head>
+<body>
+    <div class="header-title">
+        <span>VARIE</span><span class="letter">D</span><span>ADES EL PARCE</span><span class="letter">R</span><span>O</span>
+    </div>
+    <div class="form-container">
+        <div class="form-section">
+            <h2>¡Agrega el Nuevo Producto!</h2>
+            <label for="nombre-producto"><b>Nombre del Producto</b></label>
+            <input type="text" id="nombre-producto" placeholder="Lapicero, borrador, sacapunta etc...">
+            
+            <label for="cantidad-producto"><b>Cantidad de Producto</b></label>
+            <input type="number" id="cantidad-producto" placeholder="1,10,100...">
+            
+            <label for="precio-producto"><b>Precio del Producto c/u</b></label>
+            <input type="number" id="precio-producto" placeholder="100,1000,10000...">
+            
+            <button onclick="guardarProducto()"><b>Agregar</b></button>
+            <button onclick="location.href='Gesti.html'"><b>Volver</b></button>
+        </div>
+        <div class="image-container">
+            <img src="https://placehold.co/150x150" alt="Product Image" id="product-image">
+            <button onclick="cargarImagen()">Img...</button>
+        </div>
+    </div>
+    <script src="AlerAg.js"></script>
+</body>
+</html>

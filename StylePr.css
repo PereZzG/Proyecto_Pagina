@@ -1,0 +1,75 @@
+body {
+    background-color: #28255f;
+    font-family: Arial, sans-serif;
+}
+.header-title {
+    background-color: #a10726;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.header-title span {
+    color: white;
+}
+.header-title .letter {
+    color: red;
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+.nav-button {
+    background-color: #a10726;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.nav-button:hover {
+    background-color: #7b051d;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.product-item {
+    background-color: #a10726;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 8rem; /* Ancho fijo */
+    height: 10rem; /* Altura fija */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-item img {
+    max-width: 60%;
+    max-height: 60%; /* Ajusta la altura máxima para que las imágenes se adapten */
+    border-radius: 0.5rem;
+}
+.product-item p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem; /* Ajusta el tamaño del texto si es necesario */
+}
+.product-item {
+    border: 2px solid red;
+    background-color: #ff0000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

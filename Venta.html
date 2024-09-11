@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades El Parcero - Ventas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="StyleVen.css">
+</head>
+<body class="bg-gradient-to-r from-purple-800 to-blue-900 p-5">
+    <div class="header-title">
+        <span>VARIE</span><span class="letter">D</span><span>ADES EL PARCE</span><span class="letter">R</span><span>O</span>
+    </div>
+    <div class="nav-container">
+        <button class="nav-button" onclick="location.href='Produ.html'">Productos</button>
+        <button class="nav-button" onclick="location.href='Gesti.html'">Gestion</button>
+        <button class="nav-button" onclick="location.href='Vende.html'">Vender</button>
+        <button class="nav-button" onclick="location.href='Venta.html'">Ventas</button>
+        <button class="nav-button" onclick="location.href='Info.html'">Info</button>
+    </div>
+    <div class="sales-list-container mt-5">
+        <h2 class="sales-title">Ventas del Día</h2>
+        <table class="sales-table w-full text-left">
+            <thead>
+                <tr>
+                    <th class="p-2">Producto</th>
+                    <th class="p-2">Valor Unitario</th>
+                    <th class="p-2">Cantidad</th>
+                    <th class="p-2">Total</th>
+                </tr>
+            </thead>
+            <tbody id="sales-list">
+                <!-- Aquí se agregarán las ventas -->
+            </tbody>
+        </table>
+        <button id="calculate-total" class="mt-4 bg-white text-red-700 py-2 px-4 rounded">Mostrar Total de Ventas</button>
+        <div id="total-sales" class="mt-2 text-white font-bold"></div>
+        <button id="reset-sales" class="mt-4 bg-white text-red-700 py-2 px-4 rounded">Resetear Ventas</button>
+    </div>
+    <script src="VenLis.js"></script>
+</body>
+</html>
